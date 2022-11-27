@@ -1,0 +1,158 @@
+@import "color-one";
+@import "color-two";
+@import "font.scss";
+
+//SCSS variables!
+//10-15 SCSS variables
+$myFontSize: 40px;
+$myFontFamily: fantasy;
+$myBorder: dotted 5px;
+$myBackGroundColor-2: #ffff7f;
+$myMargin: auto;
+$myWidth: 250px;
+$myHeight: 50px;
+$myRadius: 30px;
+$myPosition: absolute;
+
+.body {
+    // font-family: $myFontFamily;
+    background-image: url("../img/shape.jpg");
+    text-align: center;
+    margin-top: 250px;
+    position: $myPosition;
+    p {
+        font-family: $myFontFamily;
+    }
+  }
+  
+  /* Start MENU */
+  @mixin menu-one {
+    margin: $myMargin;
+    left: 385px;
+    bottom: -200px;
+    border: solid 20px;
+    padding: 100px;
+    position: absolute;
+    height: 600px;
+    width: 900px;
+    display: block;
+    background-color: $myBackGroundColor;
+    @debug $myBackGroundColor;
+  }
+  
+  #menu {
+    @include menu-one;
+    & .gameStart {
+        border: solid 5px;
+        padding: 20px;
+        background-color:$myBackGroundColor-2;
+        font-size: $myFontSize;
+        font-family: $myFontFamily;
+        @debug $myBackGroundColor-2;
+      }
+
+    h1 {
+    font-size: x$myFontSize;
+    font-family: $myFontFamily;
+    }
+    h5 {
+    font-size: x$myFontSize;
+    font-family: $myFontFamily;
+    }
+    ul {
+    font-size: x$myFontSize;
+    font-family: $myFontFamily;
+    }
+    li {
+        list-style-type: none;
+        
+    }
+    h3 {
+        font-size: x$myFontSize;
+    font-family: $myFontFamily;
+    }
+  }
+  
+  
+  
+  /* CLOCK LAYOUT */
+  
+  #countDown {
+    background: $myBackGroundColor-2;
+    padding: 50px;
+    width: 1000px;
+    margin-left: 400px;
+    border: 2px;
+    border: $myBorder;
+    border-radius: 40px;
+  }
+  
+  .restart {
+    margin: $myMargin;
+    border: solid;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: $myBackGroundColor-2;
+    font-family: $myFontFamily;
+    font-size: 20px;
+  }
+  
+  /* Player Enter Layout */
+
+@mixin section-one {
+    float: right;
+    margin-right: 200px;
+    margin-top: 100px;
+    border: $myBorder;
+    padding: 50px;
+    width: 500px;
+    border-radius: 30px;
+    font-family: $myFontFamily;
+    font-size: 20px;
+}
+  .section {
+    @include section-one;
+  & .button1 {
+    width: $myWidth;
+    height: $myHeight;
+    background:$myBackGroundColor-2;
+    border-radius: $myRadius;
+    font-family: $myFontFamily;
+    font-size: $myFontSize;
+  }
+  p {
+    font-family: $myFontSize;
+    font-size: 20px;
+  }
+}
+  
+  /* Player Space Layout */
+
+  @mixin section-two {
+    float: left;
+    margin-left: 300px;
+    margin-top: 100px;
+    border: $myBorder;
+    padding: 50px;
+    width: 500px;
+    border-radius: 30px;
+  }
+  
+  .sectionTwo {
+    @include section-two;
+    .button2 {
+        width: $myWidth;
+        height: $myHeight;
+        background:$myBackGroundColor-2;
+        border-radius: $myRadius;
+        font-family: $myFontFamily;
+        font-size: $myFontSize;    
+    }
+    p {
+    font-family: $myFontSize;
+    font-size: 20px;
+    }
+  }
+  
+
+

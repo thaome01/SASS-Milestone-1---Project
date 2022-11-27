@@ -1,14 +1,14 @@
-/* The whole body is being shifted to center */
 .body {
-  font-family: fantasy;
-  background-image: url("img/shape.jpg");
+  background-image: url("../img/shape.jpg");
   text-align: center;
   margin-top: 250px;
   position: absolute;
 }
+.body p {
+  font-family: fantasy;
+}
 
 /* Start MENU */
-
 #menu {
   margin: auto;
   left: 385px;
@@ -19,23 +19,38 @@
   height: 600px;
   width: 900px;
   display: block;
-  background-color: aquamarine;
-  font-size: x-large;
-  font-family: fantasy;
+  background-color: #7fffd4;
 }
-
-#gameStart {
+#menu .gameStart {
   border: solid 5px;
   padding: 20px;
-  background-color: yellow;
-  font-size: x-large;
+  background-color: #ffff7f;
+  font-size: 40px;
+  font-family: fantasy;
+}
+#menu h1 {
+  font-size: x 40px;
+  font-family: fantasy;
+}
+#menu h5 {
+  font-size: x 40px;
+  font-family: fantasy;
+}
+#menu ul {
+  font-size: x 40px;
+  font-family: fantasy;
+}
+#menu li {
+  list-style-type: none;
+}
+#menu h3 {
+  font-size: x 40px;
   font-family: fantasy;
 }
 
 /* CLOCK LAYOUT */
-
 #countDown {
-  background: yellow;
+  background: #ffff7f;
   padding: 50px;
   width: 1000px;
   margin-left: 400px;
@@ -49,7 +64,7 @@
   border: solid;
   padding: 20px;
   border-radius: 25px;
-  background-color: yellow;
+  background-color: #ffff7f;
   font-family: fantasy;
   font-size: 20px;
 }
@@ -66,18 +81,20 @@
   font-family: fantasy;
   font-size: 20px;
 }
-
-.button1 {
+.section .button1 {
   width: 250px;
   height: 50px;
-  background: yellow;
+  background: #ffff7f;
   border-radius: 30px;
   font-family: fantasy;
-  font-size: x-large;
+  font-size: 40px;
+}
+.section p {
+  font-family: 40px;
+  font-size: 20px;
 }
 
 /* Player Space Layout */
-
 .sectionTwo {
   float: left;
   margin-left: 300px;
@@ -86,15 +103,18 @@
   padding: 50px;
   width: 500px;
   border-radius: 30px;
+}
+.sectionTwo .button2 {
+  width: 250px;
+  height: 50px;
+  background: #ffff7f;
+  border-radius: 30px;
   font-family: fantasy;
+  font-size: 40px;
+}
+.sectionTwo p {
+  font-family: 40px;
   font-size: 20px;
 }
 
-.button2 {
-  width: 250px;
-  height: 50px;
-  background: yellow;
-  border-radius: 30px;
-  font-family: fantasy;
-  font-size: x-large;
-}
+/*# sourceMappingURL=style.css.map */
